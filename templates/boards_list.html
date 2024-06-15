@@ -1,0 +1,22 @@
+<div class="boards-container">
+    <div class="tabuas">
+        <table class="boards-table">
+            <thead>
+                <tr>
+                    <th>Board</th>
+                    <th>Description</th>
+                    <th>Posts</th>
+                </tr>
+            </thead>
+            {% for board in boards %}
+            <tbody>
+                <tr>
+                    <td><a class="board_link" href="/{{ board.get('board_name') }}">/{{ board.get('board_name') }}/</a></td>
+                    <td>{{ board.get('board_desc') }}</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+            {% endfor %}
+        </table>
+    </div>
+</div>
