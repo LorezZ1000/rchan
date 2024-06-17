@@ -649,6 +649,7 @@ table.make-postForm > tbody > tr:not(.rulesRow) > td:first-child, #quickReplyHea
 }
 
 .last_post_info {
+    flex: 0 0 auto;
     display: flex;
     margin-left: 1em;
     width: 2.5em;
