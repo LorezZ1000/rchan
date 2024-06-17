@@ -7,7 +7,7 @@ boards_bp = Blueprint('boards', __name__)
 def main_page():
     posts = database_module.load_db()
     boards = database_module.load_boards()
-    return render_template('index.html',boards=boards,posts=reversed(posts[-6:]))
+    return render_template('index.html',boards=boards,all_posts=reversed(posts),posts=reversed(posts[-6:]))
 
 @boards_bp.route('/tabuas')
 def tabuas():

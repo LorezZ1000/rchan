@@ -12,7 +12,7 @@
     <title>ｒｃｈａｎ</title>
 </head>
 <body>
-    {% include 'navbar.html' %}
+    {% include 'utils/navbar.html' %}
     <div class="page-content">
         <div class="chan-banner">
             <img class="banner" draggable="false" src="../static/imgs/banners/index_banner/chanbanner.gif">
@@ -31,9 +31,9 @@
                 </div>
             </div>
         </div>
-        {% include 'last_posts.html' %}
-        {% include 'boards_list.html' %}
-        {% include 'footer.html' %}
+        {% include 'utils/last_posts.html' %}
+        {% include 'utils/boards_list.html' %}
+        {% include 'utils/footer.html' %}
     </div>
     <script src="{{ url_for('static', filename='js/socket.js') }}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

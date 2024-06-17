@@ -12,7 +12,7 @@
     <title>ｒｃｈａｎ</title>
 </head>
 <body>
-    {% include 'navbar.html' %}
+    {% include 'utils/navbar.html' %}
     <div class="page-content">
         <div class="chan_title_header">
             <h1 class="board-title">TÁBUAS</h1>
@@ -28,8 +28,8 @@
                 </div>
             </div>
         </div>
-        {% include 'boards_list.html' %}
-        {% include 'footer.html' %}
+        {% include 'utils/boards_list.html' %}
+        {% include 'utils/footer.html' %}
     </div>
     <script src="{{ url_for('static', filename='js/socket.js') }}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -13,21 +13,22 @@
 </head>
 <body onload="exibirMensagemFlash()">
 
-    {% include 'navbar.html' %}<audio id="notificationAudio" src="{{ url_for('static', filename='/audios/tuturu.mp3') }}" preload="auto"></audio>
+    {% include 'utils/navbar.html' %}
+    <audio id="notificationAudio" src="{{ url_for('static', filename='/audios/tuturu.mp3') }}" preload="auto"></audio>
     <div class="page-content">
         <div class="chan-banner">
             <img class="banner board_banner" draggable="false" src="../static/imgs/banners/{{ board_id }}.jpg">
         </div>
-        {% include 'threadform.html' %}
-        {% include 'board_posts.html' %}
-        {% include 'footer.html' %}
+        {% include 'utils/threadform.html' %}
+        {% include 'utils/board_posts.html' %}
+        {% include 'utils/footer.html' %}
     </div>
     <div class="mini-osaka">
         <img src="{{ url_for('static', filename='/imgs/decoration/footerimage.gif') }}" alt="mini-osaka" draggable="false">
     </div>
     <script>
-        {% include 'imagescript.html'  %}
-        {% include 'flashscript.html'  %}
+        {% include 'utils/imagescript.html'  %}
+        {% include 'utils/flashscript.html'  %}
     </script>
     <script src="{{ url_for('static', filename='js/postform.js') }}"></script>
     <script src="{{ url_for('static', filename='js/socket.js') }}"></script>
