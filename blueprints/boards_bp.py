@@ -12,7 +12,7 @@ def main_page():
 @boards_bp.route('/tabuas')
 def tabuas():
     boards = database_module.load_boards()
-    return render_template('tabuas.html',boards=boards)
+    return render_template('tabuas.html',all_posts=reversed(posts),boards=boards)
 
 @boards_bp.route('/<board_name>/')
 def board_b(board_name):
