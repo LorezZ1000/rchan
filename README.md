@@ -3,7 +3,7 @@
 ###
 <a>How to install</a>
 <pre align="left">
-git clone https://github.com/LorezZ1000/rchan
+git clone https://github.com/lainsec/rchan
 cd rchan
 pip3 -r install requirements.txt
 </pre>
